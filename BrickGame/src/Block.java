@@ -7,12 +7,11 @@ public class Block extends Rectangle {
 
     Image pic;
     boolean destroyed;
-    int posX,posY, width, height;
 
 
     Block(int x, int y, int width, int height, String s) {
-        posX = x;
-        posY = y;
+        this.x = x;
+        this.y = y;
         this.width = width;
         this.height = height;
 
