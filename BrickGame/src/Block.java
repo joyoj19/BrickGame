@@ -8,12 +8,16 @@ public class Block extends Rectangle {
     Image pic;
     boolean destroyed;
 
+    int movX, movY;
 
     Block(int x, int y, int width, int height, String s) {
         this.x = x;
         this.y = y;
         this.width = width;
         this.height = height;
+
+        movX = 3;
+        movY = 3;
 
         try {
             pic = ImageIO.read(new File("src/" + s));
